@@ -38,7 +38,10 @@
     \node[red, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,10.65) {Problem:};
     % ------------------------------------------------------------------------------------------------------------------------------
     \node[red, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,10.25) {
-            During penetration test you will avoid outputs like this one. \newline
+        \newline
+        \newline
+        \newline
+            During penetration test you will avoid outputs like this one.\newline
             {\huge{\dots Permission denied}}\newline
             Is often important for screenshot or report generation.
     };
@@ -48,8 +51,10 @@
     \node[green, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,5.65) {Solution:};
     % ------------------------------------------------------------------------------------------------------------------------------
     \node[green, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,5.25) {
-        Use \newline 
-        {\huge{\texttt{ 2>/dev/null}}} on end of your command.\newline
+        Use \newline
+        \newline 
+        {\huge{\texttt{ 2>/dev/null}}} \newline on end of your command.\newline
+        \newline
         \newline
         -> {\Large\texttt{find / -name "passwords.txt" 2>/dev/null}} \newline or as other example \newline
         {\Large\texttt{grep . -irnw -e 'pass' 2>/dev/null}}

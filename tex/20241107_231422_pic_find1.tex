@@ -39,12 +39,10 @@
 \newline
 \newline
 \newline
-You start system overview in pentest, you need to know which partitions are present, how is memory construction or how many CPU-cores on system. \newline
-\newline
-Use 
 \newline
 \newline
-{\huge{df}}, {\huge{free}}, {\huge{nproc}} and {\huge{htop}}\newline
+You will find file or folder, {\huge{find}} your best friend.\newline
+Or you search specific files on sysmtem, for example only files.
 };
 % ------------------------------------------------------------------------------------------------------------------------------
 \fill[green, opacity=0.1] (0.05,1.15) rectangle (10.75,5.75);
@@ -52,20 +50,14 @@ Use
 \node[green, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,5.65) {Solution:};
 % ------------------------------------------------------------------------------------------------------------------------------
 \node[green, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,5.25) {
-
-      % CIA Bild direkt in LaTeX zeichnen
-      \node[anchor=center] at (5.4,3.45) {
-        \begin{tikzpicture}
-            % Dreieck zeichnen
-            \draw[thick, fill=red!30, opacity=0.5] (0,2) -- (-1.73,-1) -- (1.73,-1) -- cycle;
-            % Beschriftungen
-            \node[opacity=0.5] at (0,2.3) {Confidentiality};
-            \node[opacity=0.5] at (-2,-1) {Integrity};
-            \node[opacity=0.5] at (2,-1) {Availability};
-            % CIA in der Mitte
-            \node[opacity=0.5] at (0,0) {\huge CIA};
-        \end{tikzpicture}
-    };
+\newline
+\newline
+Following command can help you: \newline
+{\huge{\texttt{find / -name "*.key"}}}\newline
+other one \newline 
+{\Large\texttt{find / -name "passwords.txt" 2>/dev/null}}\newline
+For file searh onlyuse: \newline
+{\Large\texttt{find / -type f -name "passwords.txt" 2>/dev/null}}\newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
 \draw[green, thin] (0.05,0.05) rectangle (10.75,1.05); % 10% Höhe
