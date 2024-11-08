@@ -39,10 +39,9 @@
 \newline
 \newline
 \newline
-You start system overview in pentest, you need to know which partitions are present, how is memory construction or how many CPU-cores on system. \newline
+You are in one network, but you PC have no nmap or other specific tool for scanning. How to check the network?
 \newline
-Use 
-\newline
+\newline 
 \newline
 {\huge{df}}, {\huge{free}}, {\huge{nproc}} and {\huge{htop}}\newline
 };
@@ -52,20 +51,13 @@ Use
 \node[green, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,5.65) {Solution:};
 % ------------------------------------------------------------------------------------------------------------------------------
 \node[green, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,5.25) {
+\newline
+Use {\huge{ping}}\newline
+In bash:\newline
+\begin{lstlisting}
+    for ip in 192.168.1.{1..254}; do ping -c 1 -W 1 $ip &> /dev/null & done; wait
+\end{lstlisting}
 
-      % CIA Bild direkt in LaTeX zeichnen
-      \node[anchor=center] at (5.4,3.45) {
-        \begin{tikzpicture}
-            % Dreieck zeichnen
-            \draw[thick, fill=red!30, opacity=0.5] (0,2) -- (-1.73,-1) -- (1.73,-1) -- cycle;
-            % Beschriftungen
-            \node[opacity=0.5] at (0,2.3) {Confidentiality};
-            \node[opacity=0.5] at (-2,-1) {Integrity};
-            \node[opacity=0.5] at (2,-1) {Availability};
-            % CIA in der Mitte
-            \node[opacity=0.5] at (0,0) {\huge CIA};
-        \end{tikzpicture}
-    };
 };
 % ------------------------------------------------------------------------------------------------------------------------------
 \draw[green, thin] (0.05,0.05) rectangle (10.75,1.05); % 10% Höhe

@@ -12,6 +12,8 @@ cp $input_file "${output_file}.tex"
 
 pdflatex -jobname=$output_file $input_file
 
+convert -density 300 "${output_file}.pdf" -quality 100 "${output_file}.png"
+
 if [ "$copy" == "true" ]; then
     mkdir -p backup
     cp "${output_file}.pdf" backup/
