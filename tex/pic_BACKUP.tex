@@ -39,8 +39,14 @@
 \newline
 \newline
 \newline
-Each {\large{activity}} during penetration testing requires a different set of tools. \newline
-{\large{Organize}} each activity according to the common security {\LARGE{CIA}} triad.
+During pentest you have a keyboard and see on the screeen 
+\newline
+{\huge{user@hostname:~\$}}, 
+\newline
+{\huge{root@system:~\$}} or 
+\newline
+{\huge{\#:~\$}}. 
+\newline What do you do next?
 \newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
@@ -51,10 +57,11 @@ Each {\large{activity}} during penetration testing requires a different set of t
 \node[green, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,5.25) {
 \newline
 \newline
-\newline
-{\large{C}}onfidentiality - {\large{openssl, chmod \dots}} \newline
-{\large{I}}ntegrity - {\large{sha512sum, diff \dots}} \newline
-{\large{A}}vailability - {\large{top, ping \dots}} \newline
+{\huge{htop}} or {\huge{top}} - list system processes and their resources\newline
+{\huge{iotop}} - list I/O usage by processes\newline
+{\huge{iftop}} - list network usage by processes\newline
+{\huge{ss -tulnp}} or {\large{netstat -tulnp}} - list network connections\newline
+{\huge{dmesg}} - list last kernel log\newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
 \draw[green, thin] (0.05,0.05) rectangle (10.75,1.05); % 10% Höhe
