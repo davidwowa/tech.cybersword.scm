@@ -1,10 +1,13 @@
 \documentclass[tikz,border=0pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{pgffor}
 \usepackage{listings}
 \usepackage{array}
 \usepackage{fontawesome}
+\usepackage{amsmath}
 
 \lstset{
     basicstyle=\ttfamily\fontsize{16}{18}\selectfont,
@@ -39,7 +42,8 @@
 \newline
 \newline
 \newline
-You start system {\large{overview}} in pentest, you need to know which {\large{partitions}} are present, how is {\large{memory}} construction or how many {\large{CPU-cores}} on system. \newline
+\newline
+{\Large You will know the external IP.(V.2)}
 \newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
@@ -48,13 +52,13 @@ You start system {\large{overview}} in pentest, you need to know which {\large{p
 \node[green, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,5.65) {Solution:};
 % ------------------------------------------------------------------------------------------------------------------------------
 \node[green, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,5.25) {
-\newline
-\newline
-\newline
-{\large{df -h}} - list partitions on system with human readable size \newline
-{\large{free -h}} - show RAM and swap \newline
-{\large{nproc}} - list number of cores \newline
-{\large{htop}} - if present, show current system status with running processes and so on \newline
+
+\vspace{3em}
+
+{\large{whatismyip}} - curl whatismyip.akamai.com \newline
+{\large{ipify}} - curl api.ipify.org \newline
+{\large{wtfismyip}} - curl wtfismyip.com \newline
+{\large{wtfismyip + TorInfo}} - curl wtfismyip.com/json \newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
 \draw[green, thin] (0.05,0.05) rectangle (10.75,1.05); % 10% Höhe

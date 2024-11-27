@@ -43,7 +43,7 @@
 \newline
 \newline
 \newline
-{\Large You will know the external IP.(V.2)}
+{\Large You will know the external IP.}
 \newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
@@ -55,10 +55,10 @@
 
 \vspace{3em}
 
-{\large{whatismyip}} - curl whatismyip.akamai.com \newline
-{\large{ipify}} - curl api.ipify.org \newline
-{\large{wtfismyip}} - curl wtfismyip.com \newline
-{\large{wtfismyip + TorInfo}} - curl wtfismyip.com/json \newline
+{\large{akamai}} - dig @ns1-1.akamaitech.net ANY whoami.akamai.net +short \newline
+{\large{opendns}} - dig @resolver3.opendns.com myip.opendns.com +short \newline
+{\large{google}} - dig @ns1.google.com TXT o-o.myaddr.l.google.com +short \newline
+{\large{amazon}} - curl https://checkip.amazonaws.com \newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
 \draw[green, thin] (0.05,0.05) rectangle (10.75,1.05); % 10% Höhe

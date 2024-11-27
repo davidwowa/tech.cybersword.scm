@@ -38,12 +38,10 @@
 \draw[red, thin] (0.05,5.95) rectangle (10.75,10.75); % 45% Höhe
 \node[red, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,10.65) {Problem:};
 % ------------------------------------------------------------------------------------------------------------------------------
-\node[red, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,10.25) {
+\node[red, anchor=north west, text width=10.6cm, align=center] at (0.1,10.25) {
 \newline
 \newline
-\newline
-\newline
-{\Large You will know the external IP.(V.2)}
+{\Large You will know the external IP.}
 \newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
@@ -51,14 +49,14 @@
 \draw[green, thin] (0.05,1.15) rectangle (10.75,5.75); % 45% Höhe
 \node[green, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,5.65) {Solution:};
 % ------------------------------------------------------------------------------------------------------------------------------
-\node[green, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,5.25) {
-
-\vspace{3em}
-
-{\large{whatismyip}} - curl whatismyip.akamai.com \newline
-{\large{ipify}} - curl api.ipify.org \newline
-{\large{wtfismyip}} - curl wtfismyip.com \newline
-{\large{wtfismyip + TorInfo}} - curl wtfismyip.com/json \newline
+\node[green, anchor=north west, text width=10.6cm, align=center] at (0.1,5.25) {
+{\Large \begin{lstlisting}
+    dig @ns1-1.akamaitech.net ANY whoami.akamai.net +short
+    dig @resolver3.opendns.com myip.opendns.com +short
+    dig @ns1.google.com TXT o-o.myaddr.l.google.com +short
+    # or simple
+    curl https://checkip.amazonaws.com
+\end{lstlisting}}
 };
 % ------------------------------------------------------------------------------------------------------------------------------
 \draw[green, thin] (0.05,0.05) rectangle (10.75,1.05); % 10% Höhe
