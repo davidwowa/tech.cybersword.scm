@@ -43,7 +43,7 @@
 \newline
 \newline
 \newline
-{\Large You need linux kernel information ? } \newline
+{\Large You need to encrypt and decrypt a message with a password.} \newline
 \newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
@@ -53,14 +53,13 @@
 % ------------------------------------------------------------------------------------------------------------------------------
 \node[green, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,5.25) {
 \vspace{1em}\newline
-Use command {\Large{uname -a}}\newline
+\#encrypt\newline
+{\small{echo secret | openssl aes-256-cbc -pbkdf2 -a -salt -pass pass:test}}\newline
 \vspace{1em}\newline
-Example output: \newline
-Linux server 6.1.21-v7+ \#1642 SMP Mon Apr  3 17:20:52 BST 2023 armv7l GNU/Linux\newline
-\vspace{1em}\newline
-hostname: server\newline
-Build date: Mon Apr  3 17:20:52 BST 2023\newline
-Architecture: armv7l\newline
+\#decrypt\newline
+{\small{echo encString | openssl aes-256-cbc -pbkdf2 -d -a -pass pass:test}}\newline
+\vspace{2em}\newline
+{\large{secret}} is the message to encrypt and {\large{test}} is the password.\newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
 \draw[green, thin] (0.05,0.05) rectangle (10.75,1.05); % 10% Höhe
