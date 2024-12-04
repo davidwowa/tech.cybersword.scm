@@ -43,8 +43,8 @@
 \newline
 \newline
 \newline
-You want to generate a {\Large{random password}} in shell.\newline
-\newline
+You want to avoid a {\Large{fork bomb}}. This is the possibility of calling {\Large{recursive processes}} in Bash on Linux. Shell kind for {\Large{DoS - Denial of Service}}.\newline
+Use search maschine for more information. \newline
 \newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
@@ -54,14 +54,14 @@ You want to generate a {\Large{random password}} in shell.\newline
 % ------------------------------------------------------------------------------------------------------------------------------
 \node[green, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,5.25) {
 \vspace{1em}\newline
-Use {\Large{openssl rand -base64 32}} or\newline {\Large{openssl rand -hex 15}}\newline
+Configure {\Large{ulimit -u 400}}\newline
 \vspace{1em}\newline
-The OpenSSL tool contains a set of cryptographic operations, including encryption, hashing, and random number generation.\newline
-\newline
-rand - means random numbers\newline
--base64 - encoding, so is possible to copy and trnasfer data\newline
--hex - hexadecimal encoding\newline
-32 - length\newline
+With this configuration is possible to set maximal number of processes (400 in this example) for one user. \newline
+Is possible to configure in:\newline
+\vspace{1em}\newline
+\textasciitilde/.bashrc\newline
+/etc/profile\newline
+/etc/security/limits.conf\newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
 \draw[green, thin] (0.05,0.05) rectangle (10.75,1.05); % 10% Höhe
