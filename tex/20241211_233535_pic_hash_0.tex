@@ -8,6 +8,7 @@
 \usepackage{array}
 \usepackage{fontawesome}
 \usepackage{amsmath}
+% \usepackage{wasysym}
 
 \lstset{
     basicstyle=\ttfamily\fontsize{16}{18}\selectfont,
@@ -34,23 +35,36 @@
     \node[text=green, opacity=0.1, font=\ttfamily\fontsize{5}{6}\selectfont] at (rand*10.8, rand*10.8) {\pgfmathtruncatemacro{\random}{round(rand)}\random};
 }
 
-% \fill[red, opacity=0.1] (0.05,5.95) rectangle (10.75,10.75);
-% \draw[red, thin] (0.05,5.95) rectangle (10.75,10.75); % 45% Höhe
-% \node[red, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,10.65) {Problem:};
-% % ------------------------------------------------------------------------------------------------------------------------------
-% \node[red, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,10.25) {
-% \newline
-% \newline
-% \newline
-% If you want to succeed in penetration testing and cybersecurity, learn at least:
-% \newline
-% };
+\fill[red, opacity=0.1] (0.05,5.95) rectangle (10.75,10.75);
+\draw[red, thin] (0.05,5.95) rectangle (10.75,10.75); % 45% Höhe
+\node[red, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,10.65) {Problem:};
 % ------------------------------------------------------------------------------------------------------------------------------
-\fill[green, opacity=0.1] (0.05,1.15) rectangle (10.75,10.75);
-\draw[green, thin] (0.05,1.15) rectangle (10.75,10.75); % 45% Höhe
-% \node[green, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,5.65) {Solution:};
+\node[red, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,10.25) {
+\newline
+\newline
+\newline
+\newline
+During a penetration test, you need a {\Large{hash}} of a file to {\Large{secure evidence}}.\newline
+\newline
+\newline
+};
 % ------------------------------------------------------------------------------------------------------------------------------
-\node[green, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,10.25) {
+\fill[green, opacity=0.1] (0.05,1.15) rectangle (10.75,5.75);
+\draw[green, thin] (0.05,1.15) rectangle (10.75,5.75); % 45% Höhe
+\node[green, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,5.65) {Solution:};
+% ------------------------------------------------------------------------------------------------------------------------------
+\node[green, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,5.25) {
+% \vspace{1em}
+\newline
+\newline
+Use {\Large{shasum -a 512 file}} or {\Large{echo "test" | sha512sum}}\newline
+\newline
+% \vspace{1em}
+\newline
+- {\Large{-a}} algorithm (sha512 = 512, sha256 = 256 \dots)\newline
+\newline
+\newline
+\newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
 \draw[green, thin] (0.05,0.05) rectangle (10.75,1.05); % 10% Höhe

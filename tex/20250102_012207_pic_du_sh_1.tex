@@ -8,6 +8,7 @@
 \usepackage{array}
 \usepackage{fontawesome}
 \usepackage{amsmath}
+% \usepackage{wasysym}
 
 \lstset{
     basicstyle=\ttfamily\fontsize{16}{18}\selectfont,
@@ -34,23 +35,40 @@
     \node[text=green, opacity=0.1, font=\ttfamily\fontsize{5}{6}\selectfont] at (rand*10.8, rand*10.8) {\pgfmathtruncatemacro{\random}{round(rand)}\random};
 }
 
-% \fill[red, opacity=0.1] (0.05,5.95) rectangle (10.75,10.75);
-% \draw[red, thin] (0.05,5.95) rectangle (10.75,10.75); % 45% Höhe
-% \node[red, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,10.65) {Problem:};
-% % ------------------------------------------------------------------------------------------------------------------------------
-% \node[red, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,10.25) {
-% \newline
-% \newline
-% \newline
-% If you want to succeed in penetration testing and cybersecurity, learn at least:
-% \newline
-% };
+\fill[red, opacity=0.1] (0.05,5.95) rectangle (10.75,10.75);
+\draw[red, thin] (0.05,5.95) rectangle (10.75,10.75); % 45% Höhe
+\node[red, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,10.65) {Problem:};
 % ------------------------------------------------------------------------------------------------------------------------------
-\fill[green, opacity=0.1] (0.05,1.15) rectangle (10.75,10.75);
-\draw[green, thin] (0.05,1.15) rectangle (10.75,10.75); % 45% Höhe
-% \node[green, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,5.65) {Solution:};
+\node[red, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,10.25) {
+\newline
+\newline
+\newline
+\newline
+Do you want to list all folders and files and find out their sizes?\newline
+\newline
+\newline
+};
 % ------------------------------------------------------------------------------------------------------------------------------
-\node[green, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,10.25) {
+\fill[green, opacity=0.1] (0.05,1.15) rectangle (10.75,5.75);
+\draw[green, thin] (0.05,1.15) rectangle (10.75,5.75); % 45% Höhe
+\node[green, anchor=north west, font=\ttfamily\bfseries\fontsize{8}{9}\selectfont] at (0.1,5.65) {Solution:};
+% ------------------------------------------------------------------------------------------------------------------------------
+\node[green, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,5.25) {
+% \vspace{1em}
+\newline
+\newline
+Use {\Large{du -sh * 2>/dev/null}}\newline
+\newline
+% \vspace{1em}
+\newline
+{\Large{137M}}	AndroidStudioProjects\newline
+{\Large{726M}}	DEV\newline
+{\Large{167G}}	Desktop\newline
+\newline
+- {\Large{sh}} - size human readable\newline
+- {\Large{*}} - all files and folders (current filesystem position)\newline
+- {\Large{2>/dev/null}} - ignore errors\newline
+\newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
 \draw[green, thin] (0.05,0.05) rectangle (10.75,1.05); % 10% Höhe
