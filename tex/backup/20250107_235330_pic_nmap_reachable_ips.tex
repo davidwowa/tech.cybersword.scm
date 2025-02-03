@@ -11,16 +11,16 @@
 % \usepackage{wasysym}
 
 \lstset{
-    basicstyle=\ttfamily\fontsize{7}{7}\selectfont,
+    basicstyle=\ttfamily\fontsize{16}{18}\selectfont,
     breaklines=true,
     % backgroundcolor=\color{black},
     keywordstyle=\color{pink},
     commentstyle=\color{blue},
     stringstyle=\color{white},
     showstringspaces=false,
-    frame=none
-    % xleftmargin=0.6cm,
-    % xrightmargin=0.6cm
+    frame=none,
+    xleftmargin=0.6cm,
+    xrightmargin=0.6cm
 }
 
 \begin{document}
@@ -44,7 +44,7 @@
 \newline
 \newline
 \newline
-Do you need to {\Large{copy files in the terminal from one IP to another}}?\newline
+Do you want to list {\Large{all reachable IP's}} in the network?\newline
 \newline
 \newline
 };
@@ -56,15 +56,19 @@ Do you need to {\Large{copy files in the terminal from one IP to another}}?\newl
 \node[green, anchor=north west, font=\ttfamily\fontsize{8}{9}\selectfont, text width=10.6cm, align=center] at (0.1,5.25) {
 % \vspace{1em}
 \newline
+In this example your ip is 192.168.178.13\newline
+Use {\Large{nmap -sn 192.168.178.1/24}}\newline
+Replace last ip part {\Large{13}} through {\Large{1/24}}\newline
+\vspace{1em}\newline
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-13 13:37 CET\newline
+Nmap scan report for target (192.168.178.1)\newline
+Host is up (0.015s latency).\newline
+Nmap scan report for 192.168.178.23\newline
+Host is up (0.035s latency).\newline
+\dots\newline
 \newline
 \newline
-Use {\Large{scp}}:
-\begin{scriptsize}
-\begin{lstlisting}
-For file copy:   scp folder/file user@192.168.133.7:/home/user/
-For folder copy: scp -r folder/ user@192.168.133.7:/home/user/
-\end{lstlisting}
-\end{scriptsize}
+\newline
 };
 % ------------------------------------------------------------------------------------------------------------------------------
 \draw[green, thin] (0.05,0.05) rectangle (10.75,1.05); % 10% Höhe
