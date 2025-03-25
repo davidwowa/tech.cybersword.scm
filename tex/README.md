@@ -1,3 +1,29 @@
+# pentest hints 
+
+`
+"🚨 Pentest Hits: Fresh insights from our real-world penetration testing! We uncover vulnerabilities before attackers do.
+Stay ahead — visit cybersword.tech and follow us for more:
+🔗 LinkedIn | 📸 Instagram: @ph1sher | 🐦 X: @davidwowa
+#CyberSecurity #Pentest #EthicalHacking #CyberSword"
+`
+
+# CVE allerts
+
+`
+"⚠️ Vulnerability Warning: New threats are surfacing — are you ready? We spot and share critical security flaws before they become breaches.
+Stay informed — check cybersword.tech and connect with us:
+🔗 LinkedIn | 📸 Instagram: @ph1sher | 🐦 X: @davidwowa
+#InfoSec #VulnerabilityAlert #StaySecure #CyberSword"
+`
+# Tools
+
+`
+🧰 Cyber Security Tool Drop by Cybersword
+Weitere nützliche Tools & Insights auf:
+🌐 cybersword.tech
+🔗 LinkedIn | 📸 IG: @ph1sher | 🐦 X: @davidwowa
+#CyberSecurity #Tools #HackingTools #BlueTeam #RedTeam #CyberSword
+`
 
 'sudo tlmgr install standalone' but before `sudo tlmgr update --self`  
 'sudo tlmgr install fontawesome'
