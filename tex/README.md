@@ -1,7 +1,7 @@
 # pentest hints 
 
 `
-"🚨 Pentest Hits: Fresh insights from our real-world penetration testing! We uncover vulnerabilities before attackers do.
+"🚨 Pentest Hits: Fresh insights! We uncover ... before attackers do.
 Stay ahead — visit cybersword.tech and follow us for more:
 🔗 LinkedIn | 📸 Instagram: @ph1sher | 🐦 X: @davidwowa
 #CyberSecurity #Pentest #EthicalHacking #CyberSword"
@@ -15,6 +15,14 @@ Stay informed — check cybersword.tech and connect with us:
 🔗 LinkedIn | 📸 Instagram: @ph1sher | 🐦 X: @davidwowa
 #InfoSec #VulnerabilityAlert #StaySecure #CyberSword"
 `
+
+`
+⚔️ CyberSword Drop: We don’t just watch threats – we see ... Our experience lets us highlight the real risks before they escalate.
+Stay sharp — check cybersword.tech and connect with us:
+🔗 LinkedIn | 📸 Instagram: @ph1sher | 🐦 X: @davidwowa
+#InfoSec #ThreatIntel #StaySecure #CyberSword
+`
+
 # Tools
 
 `
